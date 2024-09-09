@@ -1,11 +1,8 @@
-import React from 'react';
 
 function Header() {
   return (
-    <div>
-      <h1 className="text-4xl text-center mt-4">Header</h1>
-    </div>
-  );
+    <>Header</>
+  )
 }
 
-export default Header;
+export default Header
