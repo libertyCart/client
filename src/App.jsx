@@ -1,10 +1,10 @@
 import "./App.css";
-import Header from "./components/Header";
+import MyHeader from "./components/MyHeader";
 
 function App() {
   return (
     <>
-      <Header />
+      <MyHeader />
     </>
   );
 }
