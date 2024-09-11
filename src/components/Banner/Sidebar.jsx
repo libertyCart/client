@@ -43,7 +43,7 @@ const items = [
       getItem("Health-related Products", "Menu5-Sub3"),
    ]),
    getItem("Sports & Outdoor", "Menu6", <FcSportsMode />, [
-      getItem("exercise gear", "Menu6-Sub1"),
+      getItem("Exercise Gear", "Menu6-Sub1"),
       getItem("Camping Equipment", "Menu6-Sub2"),
       getItem("Athletic Wear", "Menu6-Sub3"),
    ]),
@@ -66,21 +66,21 @@ const items = [
    ]),
 ];
 
-const Slider = () => {
+const Sidebar = () => {
    const {
       token: { colorBgContainer, borderRadiusLG },
    } = theme.useToken();
 
    return (
-      <Layout className="flex">
+      <Layout className="flex pt-5 bg-white">
          <Sider>
-            <div className="demo-logo" />
             <Menu
                // theme="dark"
                mode="vertical"
                defaultSelectedKeys={["2"]}
                items={items}
-               style={{ flex: 1, minWidth: 0 }}
+               style={{ flex: 1 }}
+               className="border border-r-2"
             />
          </Sider>
          <Content>
@@ -98,4 +98,4 @@ const Slider = () => {
    );
 };
 
-export default Slider;
+export default Sidebar;

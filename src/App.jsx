@@ -1,12 +1,14 @@
 import "./App.css";
-import Slider from "./components/Banner/Slider";
+import Sidebar from "./components/Banner/Sidebar";
+import FlashSales from "./components/FlashSales/FlashSales";
 import MyHeader from "./components/MyHeader";
 
 function App() {
   return (
     <>
       <MyHeader />
-      <Slider/>
+      <Sidebar/>
+      <FlashSales/>
     </>
   );
 }
