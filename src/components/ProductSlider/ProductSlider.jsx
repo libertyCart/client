@@ -2,7 +2,7 @@ import ProductCard from "../ProductCard/ProductCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import productItems from "./productItems"; // Import productItems directly
+import flashSalesProduct from "./flashSalesProduct"; // Import productItems directly
 
 const ProductSlider = () => {
    const settings = {
@@ -19,9 +19,9 @@ const ProductSlider = () => {
 
    return (
       <div className="p-4">
-         {productItems && productItems.length > 0 ? (
+         {flashSalesProduct && flashSalesProduct.length > 0 ? (
             <Slider {...settings}>
-               {productItems.map((product, index) => (
+               {flashSalesProduct.map((product, index) => (
                   <div key={index} className="p-2">
                      <ProductCard product={product} />
                   </div>

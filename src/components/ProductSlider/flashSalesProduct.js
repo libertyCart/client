@@ -1,4 +1,4 @@
-const productItems = [
+const flashSalesProduct = [
    {
       id: 1,
       name: "Apple iPhone 14 Pro",
@@ -61,4 +61,4 @@ const productItems = [
    },
 ];
 
-export default productItems;
+export default flashSalesProduct;
