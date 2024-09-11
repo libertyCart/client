@@ -1,6 +1,7 @@
 import SectionTopBar from "../SectionTopBar";
 import ProductSlider from "../ProductSlider/ProductSlider";
 import ViewBtn from "../Buttons/ViewBtn";
+import BestSellingProductsData from "./BestSellingProductsData";
 
 function BestSellingProducts() {
    return (
@@ -20,7 +21,7 @@ function BestSellingProducts() {
          </div>
          {/* 3rd section */}
          <div>
-            <ProductSlider />
+            <ProductSlider BestSellingProductsData={BestSellingProductsData} />
          </div>
       </section>
    );

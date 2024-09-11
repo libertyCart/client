@@ -3,6 +3,7 @@ import Timer from "../Timer";
 import { ArrowBtn } from "../Buttons/ArrowBtn";
 import ProductSlider from "../ProductSlider/ProductSlider";
 import ViewBtn from "../Buttons/ViewBtn";
+import flashSalesProduct from "./flashSalesProduct";
 
 function FlashSales() {
    return (
@@ -25,7 +26,7 @@ function FlashSales() {
          </div>
          {/* 3rd section */}
          <div>
-            <ProductSlider />
+            <ProductSlider flashSalesProduct={flashSalesProduct}  />
          </div>
          <div className="flex justify-center">
             <ViewBtn text="View All Products" className="h-16 pt-4 w-[18%]" />

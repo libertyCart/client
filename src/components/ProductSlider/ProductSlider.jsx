@@ -1,10 +1,16 @@
+/* eslint-disable react/prop-types */
 import ProductCard from "../ProductCard/ProductCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import flashSalesProduct from "./flashSalesProduct"; // Import productItems directly
 
-const ProductSlider = () => {
+const ProductSlider = ({ flashSalesProduct, BestSellingProductsData }) => {
+   // Combine both datasets
+   const combinedProducts = [
+      ...(flashSalesProduct || []),
+      ...(BestSellingProductsData || []),
+   ];
+
    const settings = {
       infinite: true,
       speed: 2000,
@@ -19,9 +25,9 @@ const ProductSlider = () => {
 
    return (
       <div className="p-4">
-         {flashSalesProduct && flashSalesProduct.length > 0 ? (
+         {combinedProducts.length > 0 ? (
             <Slider {...settings}>
-               {flashSalesProduct.map((product, index) => (
+               {combinedProducts.map((product, index) => (
                   <div key={index} className="p-2">
                      <ProductCard product={product} />
                   </div>
