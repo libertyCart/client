@@ -5,6 +5,8 @@ import BrowseByCategory from "./components/BrowseByCategory/BrowseByCategory";
 import ExploreOurProduct from "./components/ExploreOurProduct/ExploreOurProduct";
 import FlashSales from "./components/FlashSales/FlashSales";
 import MyHeader from "./components/MyHeader";
+import NewArrival from "./components/NewArrival/NewArrival";
+import AppFooter from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <BrowseByCategory/>
       <BestSellingProducts/>
       <ExploreOurProduct/>
+      <NewArrival/> 
+      <AppFooter/>
     </>
   );
 }
