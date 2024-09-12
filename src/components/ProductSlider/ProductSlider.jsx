@@ -4,11 +4,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ProductSlider = ({ flashSalesProduct, BestSellingProductsData }) => {
+const ProductSlider = ({ flashSalesProduct, BestSellingProductsData, OurProducts }) => {
    // Combine both datasets
    const combinedProducts = [
       ...(flashSalesProduct || []),
       ...(BestSellingProductsData || []),
+      ...(OurProducts || [])
    ];
 
    const settings = {
